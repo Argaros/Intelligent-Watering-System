@@ -17,19 +17,7 @@ then automatically determines whether irrigation is needed.</br>
 - Real-time monitoring
 
 ## System Architecture
-Sensors
-↓
-ESP32 Controller
-↓
-AWS IoT Core (MQTT)
-↓
-AWS Lambda Processing
-↓
-DynamoDB / S3 Storage
-↓
-Dashboard Monitoring
-↓
-Automatic Irrigation Control
+
 
 ## Hardware Components Description
 | Component | Function |
