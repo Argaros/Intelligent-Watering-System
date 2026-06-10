@@ -8,7 +8,6 @@ The objective of this project is to develop an IoT-based smart irrigation system
 This project aims to develop a smart irrigation system using IoT technology.  
 The system monitors soil moisture and environmental conditions,\
 then automatically determines whether irrigation is needed.</br>
-yep
 
 ## Features
 - Soil moisture monitoring
@@ -17,63 +16,77 @@ yep
 - Cloud data storage
 - Real-time monitoring
 
-## System Architecture(confirming)
-Sensor Data Collection
+## System Architecture
+Sensors
 ↓
-ESP32 Processing
+ESP32 Controller
 ↓
-Fog Layer Analysis
+AWS IoT Core (MQTT)
 ↓
-Cloud Storage (AWS)
+AWS Lambda Processing
+↓
+DynamoDB / S3 Storage
 ↓
 Dashboard Monitoring
 ↓
-Automatic Irrigation Decision
+Automatic Irrigation Control
 
 ## Hardware Components Description
 | Component | Function |
 |------------|------------|
 | Moisture Sensor | Measure soil moisture level |
-| Water Flow Sensor | Monitor water consumption |
-| Temperature Sensor | Measure environmental temperature |
-| Water Pump | Provide irrigation water |
 | UV Sensor | Detect sunlight intensity |
+| Temperature Sensor | Measure environmental temperature |
+| Water Flow Sensor | Monitor water consumption |
 | Water Valve | Control water flow |
-| ESP32 | IoT communication and control |
-| Water Pipe | Water transportation |
+| Water Pump | Provide irrigation water |
 | UV Lamp | Supplemental plant lighting |
+| Water Pipe | Water transportation |
+| ESP32 | IoT communication and control |
 
 ## Bill of Materials (BoM)
 | Component | Quantity | Cost (NTD) |
 |------------|----------|------------|
 | Moisture Sensor | 1 | 102 |
-| Water Flow Sensor | 1 | 360 |
-| Temperature Sensor | 1 | 120 |
-| Water Pump | 1 | 100 |
 | UV Sensor | 1 | 300 |
+| Temperature Sensor | 1 | 120 |
+| Water Flow Sensor | 1 | 360 |
 | Water Valve | 1 | 177 |
-| ESP32 | 1 | 269 |
-| Water Pipe | 1 | 101 |
+| Water Pump | 1 | 100 |
 | UV Lamp | 1 | 296 |
+| Water Pipe | 1 | 101 |
+| ESP32 | 1 | 269 |
 | **Total** | | **1825** |
 
-## Software / Technologies(confirming)
-| Tool | Usage |
-|------|------|
-| Arduino IDE | Sensor Programming |
-| AWS | Cloud Storage |
-| GitHub | Project Management |
+## Software / Technologies
+| Technology | Purpose |
+|------------|---------|
+| Arduino IDE | ESP32 programming |
+| AWS IoT Core | Device communication |
+| AWS Lambda | Irrigation decision logic |
+| AWS EventBridge | Scheduled irrigation checks |
+| DynamoDB | Sensor data storage |
+| Amazon S3 | Raw data backup |
+| OpenWeather API | Weather forecasting |
+| GitHub | Version control |
+| Wix | Project website |
 
 ## Future Improvements
+- Mobile application integration
+- AI-based irrigation prediction
+- Additional environmental sensors
+- Larger-scale agricultural deployment
+- Real-time alert notifications
 
 ## Results
 
 ## Website
+[Project Website: 4.0 Smart Irrigation System](https://sonik6703.wixsite.com/smartirrigation)
 
-## Team Members(yaha)
-| Name | Student ID | Responsibility |
+## Team Members
+| Name | Student ID | Main Responsibility |
 |--------|--------|--------|
-| 組員A | M | Arduino Programming |
-| 組員B | M | AWS Cloud |
-| 組員C | M | Hardware Integration |
+| Julian | E11415029 | Hardware Integration & Arduino Programming |
+| 許智翔 | M11451035 | AWS Cloud |
+| Sonia Martini | E11412004 | Presentation Slides & Website |
 | 孫菱 | M11451025 | GitHub |
