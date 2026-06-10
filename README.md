@@ -17,7 +17,8 @@ The system collects environmental data through sensors connected to ESP32.\
 Sensor data are transmitted to AWS cloud services for storage and analysis. Based on soil moisture levels and weather forecasts, the system automatically decides whether irrigation is required.
 
 ## Prototype
-<img src="Image/product.jpg" width="300">
+<img src="Image/System_Exterior.jpg" width="300">
+<img src="Image/System_Interior.jpg" width="300">
 
 ## Hardware Components Description
 | Component | Function |
