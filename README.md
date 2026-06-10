@@ -1,13 +1,7 @@
 # Smart Irrigation System
 
 ## Project Objective
-
 The objective of this project is to develop an IoT-based smart irrigation system that automatically controls irrigation according to environmental conditions and soil moisture levels.
-
-## Introduction
-This project aims to develop a smart irrigation system using IoT technology.  
-The system monitors soil moisture and environmental conditions,\
-then automatically determines whether irrigation is needed.</br>
 
 ## Features
 - Soil moisture monitoring
@@ -17,7 +11,13 @@ then automatically determines whether irrigation is needed.</br>
 - Real-time monitoring
 
 ## System Architecture
-![System Architecture](Image/system_architecture.png)
+<img src="Image/system_architecture.jpg" width="500">
+
+The system collects environmental data through sensors connected to ESP32.\
+Sensor data are transmitted to AWS cloud services for storage and analysis. Based on soil moisture levels and weather forecasts, the system automatically decides whether irrigation is required.
+
+## Prototype
+<img src="Image/product.jpg" width="300">
 
 ## Hardware Components Description
 | Component | Function |
@@ -74,8 +74,6 @@ The smart irrigation system successfully:
 - Executed automatic watering decisions
 - Stored historical data for future analysis
 The project demonstrates the feasibility of combining IoT devices and cloud computing for intelligent irrigation management.
-### product picture
-<img src="Image/product.png" width="600">
 
 
 ## Website
@@ -84,7 +82,7 @@ The project demonstrates the feasibility of combining IoT devices and cloud comp
 ## Team Members
 | Name | Student ID | Main Responsibility |
 |--------|--------|--------|
-| Julian | E11415029 | Hardware Integration & Arduino Programming |
-| 許智翔 | M11451035 | AWS Cloud |
-| Sonia Martini | E11412004 | Presentation Slides & Website |
-| 孫菱 | M11451025 | GitHub |
+| Julian | E11415029 | Hardware Integration, Sensor Deployment, Arduino Programming |
+| 許智翔 | M11451035 | AWS IoT Core, Lambda, Cloud Infrastructure |
+| Sonia Martini | E11412004 | Presentation Design, Website Development |
+| 孫菱 | M11451025 | GitHub Repository Management, Documentation |
