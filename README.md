@@ -24,13 +24,13 @@ Sensor data are transmitted to AWS cloud services for storage and analysis. Base
 | Component | Function |
 |------------|------------|
 | ESP32 | Main controller for sensor data collection, processing, and cloud communication |
-| Soil Moisture Sensor | Measures soil moisture level to determine irrigation needs |
+| Capacitive Soil Moisture Sensor (v1.2) | Measures soil moisture level to determine irrigation needs |
 | Temperature/Humidity Sensor (DHT11) | Monitors environmental temperature and humidity |
-| Water Flow Sensor | Measures water flow rate and irrigation water consumption |
-| UV Sensor | Detects UV intensity and sunlight conditions |
-| Water Pump | Provides water for irrigation |
-| Motor Driver | Controls the operation of the water pump |
-| LCD Display | Displays real-time sensor readings and system status and provide electricity for component|
+| Water Flow Sensor (YF-S401) | Measures water flow rate and irrigation water consumption |
+| UV Sensor (LTR390) | Detects UV intensity and sunlight conditions |
+| Water Pump (YX-DC12V) | Provides water for irrigation |
+| Motor Driver (L298N1) | Controls the operation of the water pump |
+| LCD Display (LCM1602) | Displays real-time sensor readings and system status and provide electricity for component|
 
 ## Bill of Materials (BoM)
 | Component | Quantity | Cost (NTD) |
