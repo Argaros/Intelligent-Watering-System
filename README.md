@@ -23,15 +23,14 @@ Sensor data are transmitted to AWS cloud services for storage and analysis. Base
 ## Hardware Components Description
 | Component | Function |
 |------------|------------|
-| Moisture Sensor | Measure soil moisture level |
-| UV Sensor | Detect sunlight intensity |
-| Temperature Sensor | Measure environmental temperature |
-| Water Flow Sensor | Monitor water consumption |
-| Water Valve | Control water flow |
-| Water Pump | Provide irrigation water |
-| UV Lamp | Supplemental plant lighting |
-| Water Pipe | Water transportation |
-| ESP32 | IoT communication and control |
+| ESP32 | Main controller for sensor data collection, processing, and cloud communication |
+| Soil Moisture Sensor | Measures soil moisture level to determine irrigation needs |
+| Temperature/Humidity Sensor (DHT11) | Monitors environmental temperature and humidity |
+| Water Flow Sensor | Measures water flow rate and irrigation water consumption |
+| UV Sensor | Detects UV intensity and sunlight conditions |
+| Water Pump | Provides water for irrigation |
+| Motor Driver | Controls the operation of the water pump |
+| LCD Display | Displays real-time sensor readings and system status and provide electricity for component|
 
 ## Bill of Materials (BoM)
 | Component | Quantity | Cost (NTD) |
@@ -40,12 +39,10 @@ Sensor data are transmitted to AWS cloud services for storage and analysis. Base
 | UV Sensor | 1 | 300 |
 | Temperature Sensor | 1 | 120 |
 | Water Flow Sensor | 1 | 360 |
-| Water Valve | 1 | 177 |
+| Motor Driver | 1 | 315 |
 | Water Pump | 1 | 100 |
-| UV Lamp | 1 | 296 |
-| Water Pipe | 1 | 101 |
 | ESP32 | 1 | 269 |
-| **Total** | | **1825** |
+| **Total** | | **1566** |
 
 ## Software / Technologies
 | Technology | Purpose |
