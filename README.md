@@ -60,6 +60,17 @@ Sensor data are transmitted to AWS cloud services for storage and analysis. Base
 | GitHub | Version control |
 | Wix | Project website |
 
+## AWS Cloud Services
+| AWS Service | Function |
+|-------------|------------|
+| IoT Core – Device Shadow | Tracks real-time device status and enables remote control |
+| IoT Core – Message Routing Rule | Routes sensor data to cloud services automatically |
+| Lambda – Watering Decision | Determines irrigation actions based on soil moisture and UV levels |
+| Lambda – Shadow Update | Updates device status after watering events |
+| EventBridge Scheduler | Performs scheduled daily irrigation checks |
+| DynamoDB | Stores historical sensor data for analysis |
+| S3 | Archives raw sensor data for long-term storage |
+
 ## Future Improvements
 - Mobile application integration
 - AI-based irrigation prediction
